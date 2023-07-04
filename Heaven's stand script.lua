@@ -16,7 +16,6 @@ repeat
 until workspace.Enemies.DIO.Humanoid.Health <= 0
 game:GetService("ReplicatedStorage"):WaitForChild("Remote_Events"):WaitForChild("Input_Remote"):InvokeServer(unpack(args))
 wait(3.5)
-print("head erased")
 workspace.Enemies.DIO.Head:Destroy()
 end)
 Section:NewButton("Kill Vergil", "Punch Him First", function()
@@ -28,8 +27,7 @@ repeat
 }
 game:GetService("ReplicatedStorage"):WaitForChild("Remote_Events"):WaitForChild("Input_Remote"):InvokeServer(unpack(args))
 until workspace.Enemies.Vergil.Humanoid.Health <= 0
-wait(2)
-print("head erased")
+wait(3.5)
 workspace.Enemies.Vergil.Head:Destroy()
 end)
 
