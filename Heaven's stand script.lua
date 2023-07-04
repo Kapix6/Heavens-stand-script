@@ -56,9 +56,10 @@ local args = {
 
 game:GetService("ReplicatedStorage"):WaitForChild("Remote_Events"):WaitForChild("Shop"):FireServer(unpack(args))
 end)
-    
+Section:NewButton("Reset Stand For Free","Uses pucchi to reset ur stand", function()
+	game:GetService("ReplicatedStorage"):WaitForChild("Remote_Events"):WaitForChild("Delete_Ability"):FireServer()
 
---shop end    
+	end)
 --Create Farm
 local Tab = Window:NewTab("Farm")
 local Section = Tab:NewSection("Create Farm")
