@@ -13,9 +13,9 @@ repeat
  local args = {
     [1] = "R"
 }
-until workspace.Enemies["250 Health : S:Diavolo Dummy"].Humanoid.Health <= 0
+until workspace.Enemies.DIO.Humanoid.Health <= 0
 game:GetService("ReplicatedStorage"):WaitForChild("Remote_Events"):WaitForChild("Input_Remote"):InvokeServer(unpack(args))
-wait(2)
+wait(3.5)
 print("head erased")
 workspace.Enemies.DIO.Head:Destroy()
 end)
@@ -43,7 +43,7 @@ repeat
 game:GetService("ReplicatedStorage"):WaitForChild("Remote_Events"):WaitForChild("Input_Remote"):InvokeServer(unpack(args))
 until workspace.Enemies.Garou.Humanoid.Health <= 0
 
-wait(2)
+wait(3.5)
 print("head erased")
 workspace.Enemies.Garou.Head:Destroy()
 end)
@@ -57,10 +57,11 @@ repeat
 }
 game:GetService("ReplicatedStorage"):WaitForChild("Remote_Events"):WaitForChild("Input_Remote"):InvokeServer(unpack(args))
 until workspace.Enemies["Sakuya Izayoi"].Humanoid.Health <= 0
-wait(2)
+wait(3.5)
 print("head erased")
 workspace.Enemies["Sakuya Izayoi"].Head:Destroy()
 end)
+
 Section:NewButton("Kill SCR", "Punch Him First", function()
 repeat
  workspace.Enemies.kapix7.HumanoidRootPart.CFrame = workspace.Enemies["Silver Chariot Requiem"].HumanoidRootPart.CFrame + workspace.Enemies["Silver Chariot Requiem"].HumanoidRootPart.CFrame.lookVector * -3
@@ -71,7 +72,7 @@ repeat
 game:GetService("ReplicatedStorage"):WaitForChild("Remote_Events"):WaitForChild("Input_Remote"):InvokeServer(unpack(args))
 until workspace.Enemies["Silver Chariot Requiem"].Humanoid.Health <= 0
 
-wait(2)
+wait(3.5)
 print("head erased")
 workspace.Enemies["Silver Chariot Requiem"].Head:Destroy()
 end)
