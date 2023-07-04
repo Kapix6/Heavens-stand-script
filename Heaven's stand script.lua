@@ -20,22 +20,60 @@ print("head erased")
 workspace.Enemies.DIO.Head:Destroy()
 end)
 Section:NewButton("Kill Vergil", "Punch Him First", function()
-    workspace.Enemies.Vergil.Head:Destroy()
-    print("The fog is coming")
+repeat
+ workspace.Enemies.kapix7.HumanoidRootPart.CFrame = workspace.Enemies.Vergil.HumanoidRootPart.CFrame + workspace.Enemies.Vergil.HumanoidRootPart.CFrame.lookVector * -3
+ wait(0.1)
+ local args = {
+    [1] = "R"
+}
+game:GetService("ReplicatedStorage"):WaitForChild("Remote_Events"):WaitForChild("Input_Remote"):InvokeServer(unpack(args))
+until workspace.Enemies["250 Health : S:Diavolo Dummy"].Humanoid.Health <= 0
+wait(2)
+print("head erased")
+workspace.Enemies.Vergil.Head:Destroy()
 end)
 
 Section:NewButton("Kill Garou", "Punch Him First", function()
-    workspace.Enemies.Garou.Head:Destroy()
-    print("Weakest monster?")
+repeat
+ workspace.Enemies.kapix7.HumanoidRootPart.CFrame = workspace.Enemies.Garou.HumanoidRootPart.CFrame + workspace.Enemies.Garou.HumanoidRootPart.CFrame.lookVector * -3
+ wait(0.1)
+ local args = {
+    [1] = "R"
+}
+game:GetService("ReplicatedStorage"):WaitForChild("Remote_Events"):WaitForChild("Input_Remote"):InvokeServer(unpack(args))
+until workspace.Enemies.Garou.Humanoid.Health <= 0
+
+wait(2)
+print("head erased")
+workspace.Enemies.DIO.Head:Destroy()
 end)
 
 Section:NewButton("Kill Sakya(Event)", "Punch Her First", function()
-    workspace.Enemies["Sakuya Izayoi"].Head:Destroy()
-    print("Fake The World")
+repeat
+ workspace.Enemies.kapix7.HumanoidRootPart.CFrame = workspace.Enemies["Sakuya Izayoi"].HumanoidRootPart.CFrame + workspace.Enemies["Sakuya Izayoi"].HumanoidRootPart.CFrame.lookVector * -3
+ wait(0.1)
+ local args = {
+    [1] = "R"
+}
+game:GetService("ReplicatedStorage"):WaitForChild("Remote_Events"):WaitForChild("Input_Remote"):InvokeServer(unpack(args))
+until workspace.Enemies["Sakuya Izayoi"].Humanoid.Health <= 0
+wait(2)
+print("head erased")
+workspace.Enemies.DIO.Head:Destroy()
 end)
 Section:NewButton("Kill SCR", "Punch Him First", function()
-    workspace.Enemies["Silver Chariot Requiem"].Head:Destroy()
-    print("This is REQUIEM!")
+repeat
+ workspace.Enemies.kapix7.HumanoidRootPart.CFrame = workspace.Enemies["Silver Chariot Requiem"].HumanoidRootPart.CFrame + workspace.Enemies["Silver Chariot Requiem"].HumanoidRootPart.CFrame.lookVector * -3
+ wait(0.1)
+ local args = {
+    [1] = "R"
+}
+game:GetService("ReplicatedStorage"):WaitForChild("Remote_Events"):WaitForChild("Input_Remote"):InvokeServer(unpack(args))
+until workspace.Enemies["250 Health : S:Diavolo Dummy"].Humanoid.Health <= 0
+
+wait(2)
+print("head erased")
+workspace.Enemies.DIO.Head:Destroy()
 end)
 
 --Shop
