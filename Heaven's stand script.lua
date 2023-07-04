@@ -8,7 +8,7 @@ local Section = Tab:NewSection("Instant Kills")
 
 Section:NewButton("Kill Dio", "Punch Him First", function()
 repeat
- workspace.Enemies.kapix7.HumanoidRootPart.CFrame workspace.Enemies.DIO.HumanoidRootPart.CFrame + workspace.workspace.Enemies.DIO.HumanoidRootPart.CFrame.lookVector * -3
+ workspace.Enemies.kapix7.HumanoidRootPart.CFrame = workspace.Enemies.DIO.HumanoidRootPart.CFrame + workspace.workspace.Enemies.DIO.HumanoidRootPart.CFrame.lookVector * -3
  wait(0.1)
  local args = {
     [1] = "R"
