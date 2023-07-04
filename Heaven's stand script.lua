@@ -45,7 +45,7 @@ until workspace.Enemies.Garou.Humanoid.Health <= 0
 
 wait(2)
 print("head erased")
-workspace.Enemies.DIO.Head:Destroy()
+workspace.Enemies.Garou.Head:Destroy()
 end)
 
 Section:NewButton("Kill Sakya(Event)", "Punch Her First", function()
@@ -59,7 +59,7 @@ game:GetService("ReplicatedStorage"):WaitForChild("Remote_Events"):WaitForChild(
 until workspace.Enemies["Sakuya Izayoi"].Humanoid.Health <= 0
 wait(2)
 print("head erased")
-workspace.Enemies.DIO.Head:Destroy()
+workspace.Enemies["Sakuya Izayoi"].Head:Destroy()
 end)
 Section:NewButton("Kill SCR", "Punch Him First", function()
 repeat
