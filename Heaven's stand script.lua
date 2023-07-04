@@ -26,9 +26,9 @@ repeat
     [1] = "R"
 }
 game:GetService("ReplicatedStorage"):WaitForChild("Remote_Events"):WaitForChild("Input_Remote"):InvokeServer(unpack(args))
-until workspace.Enemies.Vergil.Humanoid.Health <= 0
 wait(3.5)
 workspace.Enemies.Vergil.Head:Destroy()
+until workspace.Enemies.Vergil.Humanoid.Health <= 0
 end)
 
 Section:NewButton("Kill Garou", "Punch Him First", function()
