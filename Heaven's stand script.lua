@@ -7,8 +7,17 @@ local Tab = Window:NewTab("Auto")
 local Section = Tab:NewSection("Instant Kills")
 
 Section:NewButton("Kill Dio", "Punch Him First", function()
-    workspace.Enemies.DIO.Head:Destroy()
-    print("KONO DIO DA!")
+repeat
+ workspace.Enemies.kapix7.HumanoidRootPart.CFrame workspace.Enemies.DIO.HumanoidRootPart.CFrame + workspace.workspace.Enemies.DIO.HumanoidRootPart.CFrame.lookVector * -3
+ wait(0.1)
+ local args = {
+    [1] = "R"
+}
+until workspace.Enemies["250 Health : S:Diavolo Dummy"].Humanoid.Health <= 0
+game:GetService("ReplicatedStorage"):WaitForChild("Remote_Events"):WaitForChild("Input_Remote"):InvokeServer(unpack(args))
+wait(2)
+print("head erased")
+workspace.Enemies.DIO.Head:Destroy()
 end)
 Section:NewButton("Kill Vergil", "Punch Him First", function()
     workspace.Enemies.Vergil.Head:Destroy()
