@@ -22,7 +22,7 @@ Section:NewToggle("Kill Dio", "Punch Him First", function(state)
 }
 
 game:GetService("ReplicatedStorage"):WaitForChild("Remote_Events"):WaitForChild("Input_Remote"):InvokeServer(unpack(args))
-    wait(1)
+    wait(3.5)
         workspace.Enemies.DIO.Head:Destroy()
             until workspace.Enemies.DIO.Humanoid.Health <= 0  
    end) 
@@ -41,7 +41,7 @@ local args = {
 }
                 
 game:GetService("ReplicatedStorage"):WaitForChild("Remote_Events"):WaitForChild("Input_Remote"):InvokeServer(unpack(args))
-wait(1)
+wait(3.5)
 workspace.Enemies.DIO.Head:Destroy()
 until workspace.Enemies.DIO.Humanoid.Health <= 0  
     end)
@@ -57,7 +57,7 @@ repeat
     [1] = "R"
 }
 game:GetService("ReplicatedStorage"):WaitForChild("Remote_Events"):WaitForChild("Input_Remote"):InvokeServer(unpack(args))
-wait(1)
+wait(3.5)
 workspace.Enemies.Vergil.Head:Destroy()
 until workspace.Enemies.Vergil.Humanoid.Health <= 0
 end)
@@ -70,7 +70,7 @@ repeat
     [1] = "R"
 }
 game:GetService("ReplicatedStorage"):WaitForChild("Remote_Events"):WaitForChild("Input_Remote"):InvokeServer(unpack(args))
-    wait(1)
+    wait(3.5)
         workspace.Enemies.Garou.Head:Destroy()
         until workspace.Enemies.Garou.Humanoid.Health <= 0
 end)
@@ -83,7 +83,7 @@ repeat
     [1] = "R"
 }
 game:GetService("ReplicatedStorage"):WaitForChild("Remote_Events"):WaitForChild("Input_Remote"):InvokeServer(unpack(args))
-wait(1)
+wait(3.5)
 workspace.Enemies["Sakuya Izayoi"].Head:Destroy()
 until workspace.Enemies["Sakuya Izayoi"].Humanoid.Health <= 0
 end)
@@ -96,7 +96,7 @@ repeat
     [1] = "R"
 }
 game:GetService("ReplicatedStorage"):WaitForChild("Remote_Events"):WaitForChild("Input_Remote"):InvokeServer(unpack(args))
-wait(1)
+wait(3.5)
 workspace.Enemies["Silver Chariot Requiem"].Head:Destroy()
 until workspace.Enemies["Silver Chariot Requiem"].Humanoid.Health <= 0
 end)
