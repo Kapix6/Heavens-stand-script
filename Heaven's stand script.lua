@@ -16,13 +16,13 @@ Section:NewToggle("Kill Dio", "Punch Him First", function(state)
             
     repeat
  workspace.Enemies.kapix7.HumanoidRootPart.CFrame = workspace.Enemies.DIO.HumanoidRootPart.CFrame + workspace.Enemies.DIO.HumanoidRootPart.CFrame.lookVector * -3
- wait(20)
+ wait(0.1)
  local args = {
     [1] = "R"
 }
 
 game:GetService("ReplicatedStorage"):WaitForChild("Remote_Events"):WaitForChild("Input_Remote"):InvokeServer(unpack(args))
-    wait(4)
+    wait(1)
         workspace.Enemies.DIO.Head:Destroy()
             until workspace.Enemies.DIO.Humanoid.Health <= 0  
    end) 
@@ -35,13 +35,13 @@ game:GetService("ReplicatedStorage"):WaitForChild("Remote_Events"):WaitForChild(
                         
                 repeat
      workspace.Enemies.kapix7.HumanoidRootPart.CFrame = workspace.Enemies.DIO.HumanoidRootPart.CFrame + workspace.Enemies.DIO.HumanoidRootPart.CFrame.lookVector * -3
- wait(20)
+ wait(0.1)
 local args = {
 [1] = "R"
 }
                 
 game:GetService("ReplicatedStorage"):WaitForChild("Remote_Events"):WaitForChild("Input_Remote"):InvokeServer(unpack(args))
-wait(4)
+wait(1)
 workspace.Enemies.DIO.Head:Destroy()
 until workspace.Enemies.DIO.Humanoid.Health <= 0  
     end)
@@ -52,12 +52,12 @@ end)
 Section:NewButton("Kill Vergil", "Punch Him First", function()
 repeat
  workspace.Enemies.kapix7.HumanoidRootPart.CFrame = workspace.Enemies.Vergil.HumanoidRootPart.CFrame + workspace.Enemies.Vergil.HumanoidRootPart.CFrame.lookVector * -3
- wait(20)
+ wait(0.1)
  local args = {
     [1] = "R"
 }
 game:GetService("ReplicatedStorage"):WaitForChild("Remote_Events"):WaitForChild("Input_Remote"):InvokeServer(unpack(args))
-wait(4)
+wait(1)
 workspace.Enemies.Vergil.Head:Destroy()
 until workspace.Enemies.Vergil.Humanoid.Health <= 0
 end)
@@ -65,12 +65,12 @@ end)
 Section:NewButton("Kill Garou", "Punch Him First", function()
 repeat
  workspace.Enemies.kapix7.HumanoidRootPart.CFrame = workspace.Enemies.Garou.HumanoidRootPart.CFrame + workspace.Enemies.Garou.HumanoidRootPart.CFrame.lookVector * -3
- wait(20)
+ wait(0.1)
  local args = {
     [1] = "R"
 }
 game:GetService("ReplicatedStorage"):WaitForChild("Remote_Events"):WaitForChild("Input_Remote"):InvokeServer(unpack(args))
-    wait(4)
+    wait(1)
         workspace.Enemies.Garou.Head:Destroy()
         until workspace.Enemies.Garou.Humanoid.Health <= 0
 end)
@@ -78,12 +78,12 @@ end)
 Section:NewButton("Kill Sakya(Event)", "Punch Her First", function()
 repeat
  workspace.Enemies.kapix7.HumanoidRootPart.CFrame = workspace.Enemies["Sakuya Izayoi"].HumanoidRootPart.CFrame + workspace.Enemies["Sakuya Izayoi"].HumanoidRootPart.CFrame.lookVector * -3
- wait(20)
+ wait(0.1)
  local args = {
     [1] = "R"
 }
 game:GetService("ReplicatedStorage"):WaitForChild("Remote_Events"):WaitForChild("Input_Remote"):InvokeServer(unpack(args))
-wait(4)
+wait(1)
 workspace.Enemies["Sakuya Izayoi"].Head:Destroy()
 until workspace.Enemies["Sakuya Izayoi"].Humanoid.Health <= 0
 end)
@@ -91,12 +91,12 @@ end)
 Section:NewButton("Kill SCR", "Punch Him First", function()
 repeat
  workspace.Enemies.kapix7.HumanoidRootPart.CFrame = workspace.Enemies["Silver Chariot Requiem"].HumanoidRootPart.CFrame + workspace.Enemies["Silver Chariot Requiem"].HumanoidRootPart.CFrame.lookVector * -3
- wait(20)
+ wait(0.1)
  local args = {
     [1] = "R"
 }
 game:GetService("ReplicatedStorage"):WaitForChild("Remote_Events"):WaitForChild("Input_Remote"):InvokeServer(unpack(args))
-wait(4)
+wait(1)
 workspace.Enemies["Silver Chariot Requiem"].Head:Destroy()
 until workspace.Enemies["Silver Chariot Requiem"].Humanoid.Health <= 0
 end)
