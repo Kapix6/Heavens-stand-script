@@ -46,7 +46,9 @@ workspace.Enemies.DIO.Head:Destroy()
 until workspace.Enemies.DIO.Humanoid.Health <= 0  
     end)
     end
-    end          
+    end
+    wait(20)
+    print("finished")          
 end)
 
 Section:NewButton("Kill Vergil", "Punch Him First", function()
