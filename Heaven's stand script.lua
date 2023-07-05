@@ -16,7 +16,7 @@ Section:NewToggle("Kill Dio", "Punch Him First", function(state)
             
     repeat
  workspace.Enemies.kapix7.HumanoidRootPart.CFrame = workspace.Enemies.DIO.HumanoidRootPart.CFrame + workspace.Enemies.DIO.HumanoidRootPart.CFrame.lookVector * -3
- wait(0.1)
+ wait(20)
  local args = {
     [1] = "R"
 }
@@ -35,7 +35,7 @@ game:GetService("ReplicatedStorage"):WaitForChild("Remote_Events"):WaitForChild(
                         
                 repeat
      workspace.Enemies.kapix7.HumanoidRootPart.CFrame = workspace.Enemies.DIO.HumanoidRootPart.CFrame + workspace.Enemies.DIO.HumanoidRootPart.CFrame.lookVector * -3
- wait(0.1)
+ wait(20)
 local args = {
 [1] = "R"
 }
@@ -46,15 +46,13 @@ workspace.Enemies.DIO.Head:Destroy()
 until workspace.Enemies.DIO.Humanoid.Health <= 0  
     end)
     end
-    end
-    wait(20)
-    print("finished")          
+    end       
 end)
 
 Section:NewButton("Kill Vergil", "Punch Him First", function()
 repeat
  workspace.Enemies.kapix7.HumanoidRootPart.CFrame = workspace.Enemies.Vergil.HumanoidRootPart.CFrame + workspace.Enemies.Vergil.HumanoidRootPart.CFrame.lookVector * -3
- wait(0.1)
+ wait(20)
  local args = {
     [1] = "R"
 }
@@ -67,7 +65,7 @@ end)
 Section:NewButton("Kill Garou", "Punch Him First", function()
 repeat
  workspace.Enemies.kapix7.HumanoidRootPart.CFrame = workspace.Enemies.Garou.HumanoidRootPart.CFrame + workspace.Enemies.Garou.HumanoidRootPart.CFrame.lookVector * -3
- wait(0.1)
+ wait(20)
  local args = {
     [1] = "R"
 }
@@ -80,7 +78,7 @@ end)
 Section:NewButton("Kill Sakya(Event)", "Punch Her First", function()
 repeat
  workspace.Enemies.kapix7.HumanoidRootPart.CFrame = workspace.Enemies["Sakuya Izayoi"].HumanoidRootPart.CFrame + workspace.Enemies["Sakuya Izayoi"].HumanoidRootPart.CFrame.lookVector * -3
- wait(0.1)
+ wait(20)
  local args = {
     [1] = "R"
 }
@@ -93,7 +91,7 @@ end)
 Section:NewButton("Kill SCR", "Punch Him First", function()
 repeat
  workspace.Enemies.kapix7.HumanoidRootPart.CFrame = workspace.Enemies["Silver Chariot Requiem"].HumanoidRootPart.CFrame + workspace.Enemies["Silver Chariot Requiem"].HumanoidRootPart.CFrame.lookVector * -3
- wait(0.1)
+ wait(20)
  local args = {
     [1] = "R"
 }
