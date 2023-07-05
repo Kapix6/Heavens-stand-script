@@ -6,7 +6,12 @@ local Window = Library.CreateLib("The Real Script", "DarkTheme")
 local Tab = Window:NewTab("Auto")
 local Section = Tab:NewSection("Instant Kills")
 
-Section:NewButton("Kill Dio", "Punch Him First", function()
+Section:NewToggle("Kill Dio", "Punch Him First", function(state)
+        if state then
+            
+        
+    _G.Dio = true
+        while _G.Dio == true do wait()
 repeat
  workspace.Enemies.kapix7.HumanoidRootPart.CFrame = workspace.Enemies.DIO.HumanoidRootPart.CFrame + workspace.Enemies.DIO.HumanoidRootPart.CFrame.lookVector * -3
  wait(0.1)
@@ -17,8 +22,27 @@ repeat
 game:GetService("ReplicatedStorage"):WaitForChild("Remote_Events"):WaitForChild("Input_Remote"):InvokeServer(unpack(args))
     wait(4)
         workspace.Enemies.DIO.Head:Destroy()
-            until workspace.Enemies.DIO.Humanoid.Health <= 0        
+            until workspace.Enemies.DIO.Humanoid.Health <= 0  
+   end 
+    
+          else    
+                _G.Dio = false
+                     while _G.Dio == true do wait()
+                repeat
+     workspace.Enemies.kapix7.HumanoidRootPart.CFrame = workspace.Enemies.DIO.HumanoidRootPart.CFrame + workspace.Enemies.DIO.HumanoidRootPart.CFrame.lookVector * -3
+ wait(0.1)
+local args = {
+[1] = "R"
+}
+                
+game:GetService("ReplicatedStorage"):WaitForChild("Remote_Events"):WaitForChild("Input_Remote"):InvokeServer(unpack(args))
+wait(4)
+workspace.Enemies.DIO.Head:Destroy()
+until workspace.Enemies.DIO.Humanoid.Health <= 0  
+    end 
+    end          
 end)
+
 Section:NewButton("Kill Vergil", "Punch Him First", function()
 repeat
  workspace.Enemies.kapix7.HumanoidRootPart.CFrame = workspace.Enemies.Vergil.HumanoidRootPart.CFrame + workspace.Enemies.Vergil.HumanoidRootPart.CFrame.lookVector * -3
