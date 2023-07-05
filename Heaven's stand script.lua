@@ -13,10 +13,11 @@ repeat
  local args = {
     [1] = "R"
 }
-until workspace.Enemies.DIO.Humanoid.Health <= 0
+
 game:GetService("ReplicatedStorage"):WaitForChild("Remote_Events"):WaitForChild("Input_Remote"):InvokeServer(unpack(args))
-wait(3.5)
-workspace.Enemies.DIO.Head:Destroy()
+    wait(4)
+        workspace.Enemies.DIO.Head:Destroy()
+            until workspace.Enemies.DIO.Humanoid.Health <= 0        
 end)
 Section:NewButton("Kill Vergil", "Punch Him First", function()
 repeat
@@ -26,7 +27,7 @@ repeat
     [1] = "R"
 }
 game:GetService("ReplicatedStorage"):WaitForChild("Remote_Events"):WaitForChild("Input_Remote"):InvokeServer(unpack(args))
-wait(3.5)
+wait(4)
 workspace.Enemies.Vergil.Head:Destroy()
 until workspace.Enemies.Vergil.Humanoid.Health <= 0
 end)
@@ -39,11 +40,9 @@ repeat
     [1] = "R"
 }
 game:GetService("ReplicatedStorage"):WaitForChild("Remote_Events"):WaitForChild("Input_Remote"):InvokeServer(unpack(args))
-until workspace.Enemies.Garou.Humanoid.Health <= 0
-
-wait(3.5)
-print("head erased")
-workspace.Enemies.Garou.Head:Destroy()
+    wait(4)
+        workspace.Enemies.Garou.Head:Destroy()
+        until workspace.Enemies.Garou.Humanoid.Health <= 0
 end)
 
 Section:NewButton("Kill Sakya(Event)", "Punch Her First", function()
@@ -54,10 +53,9 @@ repeat
     [1] = "R"
 }
 game:GetService("ReplicatedStorage"):WaitForChild("Remote_Events"):WaitForChild("Input_Remote"):InvokeServer(unpack(args))
-until workspace.Enemies["Sakuya Izayoi"].Humanoid.Health <= 0
-wait(3.5)
-print("head erased")
+wait(4)
 workspace.Enemies["Sakuya Izayoi"].Head:Destroy()
+until workspace.Enemies["Sakuya Izayoi"].Humanoid.Health <= 0
 end)
 
 Section:NewButton("Kill SCR", "Punch Him First", function()
@@ -68,11 +66,9 @@ repeat
     [1] = "R"
 }
 game:GetService("ReplicatedStorage"):WaitForChild("Remote_Events"):WaitForChild("Input_Remote"):InvokeServer(unpack(args))
-until workspace.Enemies["Silver Chariot Requiem"].Humanoid.Health <= 0
-
-wait(3.5)
-print("head erased")
+wait(4)
 workspace.Enemies["Silver Chariot Requiem"].Head:Destroy()
+until workspace.Enemies["Silver Chariot Requiem"].Humanoid.Health <= 0
 end)
 
 --Shop
