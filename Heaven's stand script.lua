@@ -8,11 +8,13 @@ local Section = Tab:NewSection("Instant Kills")
 
 Section:NewToggle("Kill Dio", "Punch Him First", function(state)
         if state then
-            
-        
+
     _G.Dio = true
         while _G.Dio == true do wait()
-repeat
+            pcall(function ()
+                
+            
+    repeat
  workspace.Enemies.kapix7.HumanoidRootPart.CFrame = workspace.Enemies.DIO.HumanoidRootPart.CFrame + workspace.Enemies.DIO.HumanoidRootPart.CFrame.lookVector * -3
  wait(0.1)
  local args = {
@@ -23,11 +25,14 @@ game:GetService("ReplicatedStorage"):WaitForChild("Remote_Events"):WaitForChild(
     wait(4)
         workspace.Enemies.DIO.Head:Destroy()
             until workspace.Enemies.DIO.Humanoid.Health <= 0  
-   end 
-    
+   end) 
+    end
           else    
                 _G.Dio = false
                      while _G.Dio == true do wait()
+                        pcall(function()
+                            
+                        
                 repeat
      workspace.Enemies.kapix7.HumanoidRootPart.CFrame = workspace.Enemies.DIO.HumanoidRootPart.CFrame + workspace.Enemies.DIO.HumanoidRootPart.CFrame.lookVector * -3
  wait(0.1)
@@ -39,7 +44,8 @@ game:GetService("ReplicatedStorage"):WaitForChild("Remote_Events"):WaitForChild(
 wait(4)
 workspace.Enemies.DIO.Head:Destroy()
 until workspace.Enemies.DIO.Humanoid.Health <= 0  
-    end 
+    end)
+    end
     end          
 end)
 
